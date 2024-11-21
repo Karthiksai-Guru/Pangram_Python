@@ -1,9 +1,9 @@
 def ispangram(str):
 	alph = "abcdefghijklmnopqrstuvwxyz"
 	for i in alph:
-		if i not in str.lower():  ''' "for i in alph" will iterate through each alphabet, if even 1 alphabet is not present in the string, if block will run and it will return false and exit the function body. If all alphabets are present, true will be returned'''
+		if i not in str.lower():  ''' .lower() eliminates the need to consider capital alphabets '''
 			return False
-	return True
+	return True               ''' true will only be returned if the entire for loop executes without executing the if block. '''
 
 str = input()
 if(ispangram(str) == True):
